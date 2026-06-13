@@ -246,6 +246,38 @@ Router → TeamProfileNode → Synthesis → Validation
 
 ---
 
+🚀 Future Improvements
+
+Short Term
+
+
+Streaming responses — stream LLM output token by token instead of waiting for full answer, just like ChatGPT
+Conversation export — download full chat history as PDF or CSV
+Named sessions — save and switch between multiple chat sessions like ChatGPT's conversation list
+Voice input — allow users to ask questions by speaking using browser speech API
+
+
+Medium Term
+
+
+Live IPL data — integrate Cricbuzz or ESPN Cricinfo API to fetch real-time scores, updated squad data, and live match conditions instead of relying on a static PDF
+Web search fallback — when a query falls outside the dataset (e.g. IPL 2025 auction prices), automatically trigger a web search using Tavily or SerpAPI
+Reranking — add a Cross-Encoder reranker after retrieval to improve chunk quality before sending to the LLM
+Query expansion — automatically rephrase ambiguous queries before retrieval to improve recall
+
+
+Long Term
+
+
+User authentication — login system so each user has their own private history and preferences
+Dream11 accuracy scoring — compare AI Dream11 suggestions against actual match results and score prediction accuracy over time
+Multi-language support — support queries in Hindi and Telugu for wider accessibility
+Mobile app — wrap the Streamlit app into a mobile-friendly PWA or build a React Native version
+Fine-tuned model — fine-tune a small LLM specifically on IPL data for faster, more accurate answers without needing RAG
+
+
+---
+
 ## 🙏 Credits
 
 - **Dataset** — IPL LangGraph RAG Dataset, RAG-ATHON 24, SVECW Department of Information Technology
